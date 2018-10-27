@@ -2,7 +2,7 @@ body{
   font: 15px/1.5 Helvetica,sans-serif;
   padding:0;
   margin:0;
-  background:url('../images/CentralParkImage.png') no-repeat center center fixed;
+  background:url('https://stmed.net/sites/default/files/central-park-wallpapers-28494-631105.jpg') no-repeat center center fixed;
   background-size:cover;
   background-attachment: fixed;
     
@@ -56,6 +56,7 @@ ul{
 /* Header **/
 header{
   background:#353535;
+  opacity: 0.75;
   color:#A6E972;
   padding-top:30px;
   min-height:70px;
@@ -98,8 +99,11 @@ header a:hover{
   font-weight:bold;
 }
 
-.slideshow images{
-    
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
 
 /* Showcase */
