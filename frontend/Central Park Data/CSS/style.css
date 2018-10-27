@@ -22,6 +22,21 @@ body{
   opacity: 0.75;
 }
 
+.surveyButton {
+    background-color: #A6E972;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
 
 ul{
   margin:0;
