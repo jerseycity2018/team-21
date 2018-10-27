@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<meta name ="viewport" content = "width=device-width">
+		<title>Central Park Visit</title>
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1><span class="highlight">Central Park </span>Visit</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="phototrip.html">Make Your Trip Memorable</a></li>
+                        <li><a href="visitordata.html">Our Visitors</a></li>
+                        <li><a href="index.html">Sweepstakes</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+			<section id="showcase">
+
+                <div class= "slideshow images">
+                  <img class="mySlides" src="https://drive.google.com/open?id=1AMD_9VD7sBCbBo7NQJp8-Zvk3Lzs7q0R" height = 500 width = 100% align="middle">
+                  <img class="mySlides" src="https://drive.google.com/open?id=1gNtEs_V9gkRf6PPmAwSHHvcEy8ox9FCt" height = 500 width = 100% align="middle">
+                  <img class="mySlides" src="https://drive.google.com/open?id=1VLPpQBqenf9sEpClD5yq9zgdgO5hXmEp" height = 500 width = 100% align="middle">
+                  <img class="mySlides" src="https://drive.google.com/open?id=1VLPpQBqenf9sEpClD5yq9zgdgO5hXmEp" height = 500 width = 100% align="middle" >
+
+                  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+
+                <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+                </script>
+                <p>#Central Park</p>
+			</section>
+        
+        
+        
+        
+            <section id="newsletter">
+                <div class="container">
+                    <h1>Subscribe To Our Newsletter</h1>
+                    <form>
+						<input type="email" placeholder="Enter Email...">
+                            <button type="submit" class="button_1">Subscribe</button>
+				    </form>
+				</div>
+            </section>
+		<footer>
+			<p>Central Park Visit, Copyright &copy; 2018</p>
+		</footer>
+        <section id="logoArea">
+        <div class = "container">
+            <a href = "https://www.centralpark.com/visitor-info/central-park-conservancy/"><img src="Images/CentralParkConservancyLogo.png" height = 60 width = 120 draggable = "false" ondragstart = "return false;" onContextMenu="return false;" style = "float:left"></a>
+        </div>
+        </section>
+	</body>
+</html>

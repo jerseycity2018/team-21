@@ -2,7 +2,10 @@ body{
   font: 15px/1.5 Helvetica,sans-serif;
   padding:0;
   margin:0;
-  background-color: whitesmoke;
+  background:url('../images/CentralParkImage.png') no-repeat center center fixed;
+  background-size:cover;
+  background-attachment: fixed;
+    
 }
 
 /* Global */
@@ -11,6 +14,29 @@ body{
   margin:auto;
   overflow:hidden;
 }
+
+.surveyContainer{
+  background-color: white;
+  width: 60%;
+  margin: auto;
+  opacity: 0.75;
+}
+
+.surveyButton {
+    background-color: #A6E972;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
 
 ul{
   margin:0;
@@ -26,19 +52,10 @@ ul{
   color:#ffffff;
 }
 
-.dark{
-  padding:15px;
-  background:#89324a;
-  color:#ffffff;
-  margin-top:10px;
-  margin-bottom:10px;
-}
-
-
 
 /* Header **/
 header{
-  background:gray;
+  background:#353535;
   color:#A6E972;
   padding-top:30px;
   min-height:70px;
@@ -72,40 +89,49 @@ header nav{
 }
 
 header .highlight, header .current a{
-  color:whitesmoke;
+  color:white;
   font-weight:bold;
 }
 
 header a:hover{
-  color: whitesmoke;
+  color: white;
   font-weight:bold;
+}
+
+.slideshow images{
+    
 }
 
 /* Showcase */
 #showcase{
   min-height:500px;
-  background:url('../images/CentralParkImage.png') no-repeat;
+  background:url('../images/CentralParkImage.png') no-repeat center center fixed;
   background-size:cover;
   background-attachment: fixed;
-  opacity:0.75;
+    
 
 }
 
 #showcase h1{
-  margin-top:200px;
+  margin: auto;
   font-size:55px;
-  margin-bottom:10px;
 }
 
 #showcase p{
   font-size:20px;
 }
 
+
+#logoArea{
+  padding:15px;
+  background:white;
+}
+
 /* Newsletter */
 #newsletter{
-  padding:15px;
   color:#ffffff;
-  background: gray
+  background:#353535;
+  margin: auto;
 }
 
 #newsletter h1{
@@ -115,6 +141,7 @@ header a:hover{
 #newsletter form {
   float:right;
   margin-top:15px;
+  margin-bottom: 15px;
 }
 
 #newsletter input[type="email"]{
@@ -123,21 +150,6 @@ header a:hover{
   width:250px;
 }
 
-/* Boxes */
-#boxes{
-  margin-top:20px;
-}
-
-#boxes .box{
-  float:left;
-  text-align: center;
-  width:30%;
-  padding:10px;
-}
-
-#boxes .box img{
-  width:90px;
-}
 
 /* Sidebar */
 aside#sidebar{
@@ -174,6 +186,14 @@ footer{
   text-align: center;
 }
 
+.logo{
+  padding:10px;
+  margin-top:10px;
+  color:#ffffff;
+  background-color:#A6E972;
+  text-align: center;   
+}
+
 /* Media Queries */
 @media(max-width: 768px){
   header #branding,
@@ -207,15 +227,3 @@ footer{
     margin-bottom:5px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
