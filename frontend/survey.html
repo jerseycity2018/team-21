@@ -1,18 +1,62 @@
-<HTML>
-<FORM METHOD = "POST" ACTION = "">
-<TABLE BORDER = '1'>
-<TR>
-<TD>"Name"</TD>
-<TD><INPUT TYPE = "TEXT" NAME = "name" SIZE = "25"></TD>
-</TR>
-<TR>
-<TD>"Email"</TD>
-<TD><INPUT TYPE = "TEXT" NAME = "email" SIZE = "35"></TD>
-</TR>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<meta name ="viewport" content = "width=device-width">
+		<title>Central Park Visit Survey</title>
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1><span class="highlight">Central Park </span>Visit</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Image Filter</a></li>
+                        <li><a href="index.html">Our Visitors</a></li>
+                        <li><a href="index.html">Sweepstakes</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
-</TABLE>
-<P><INPUT TYPE = "SUBMIT" VALUE = "Submit" NAME = "B1"></P>
-</FORM>
-</FORM>
+        <section id="showcase">
+            <div class="container">
+                <div class = "whitebackground">
+                    <h1><b>Central Park Visit Survey</b></h1>
+                    <FORM METHOD = "POST">
+                        <p>1. Age Range: <br>
+                            <input type="radio" value="18 - 29">18 - 24<br>
+                            <input type="radio" value="30 - 39">30 - 39<br>
+                            <input type="radio" value="40 - 49">40 - 49<br>
+                            <input type="radio" value="50 - 59">50 - 59<br>
+                            <input type="radio" value="60+">60+<br>
+                        </p>
 
-</HTML>
+                        <p>2. Tourist: <br>
+                            <input type="radio" value="yes">Yes<br>
+                            <input type="radio" value="no">No<br>
+                        </p>
+
+                        <p>3. Activities (Select all that apply): <br>
+                            <INPUT TYPE="Checkbox" Name="Activity" Value ="Leisure">Leisure<br>
+                            <INPUT TYPE="Checkbox" Name="Activity" Value ="Running">Running<br>
+                            <INPUT TYPE="Checkbox" Name="Activity" Value ="Walking Dog">Walking Dog<br>
+                            <INPUT TYPE="Checkbox" Name="Activity" Value ="Attractions">Attractions<br>
+                        </p>
+
+                        <p> <input type="submit" value="Submit the Survey"></p>
+                        <br>
+                        <br>
+                    </FORM>
+                        </div>
+				    </div>
+                </section>
+
+		<footer>
+			<p>Central Park Visit, Copyright &copy; 2018</p>
+		</footer>
+	</body>
+</html>
