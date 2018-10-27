@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<meta name ="viewport" content = "width=device-width">
+		<title>Central Park Visit</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1><span class="highlight">Central Park </span>Visit</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="phototrip.html">Make Your Trip Memorable</a></li>
+                        <li><a href="visitordata.html">Our Visitors</a></li>
+						<li><a href="index.html">Sweepstakes</a></li>
+						<li><a href="survey.html">Survey</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+			<section id="class">
+
+                <div class= "slideshow images">
+                  <img class="mySlides" src="https://daisybeattyphotography.com/wp-content/uploads/2016/11/best-family-photos-manhattan-daisy-beatty-central-park-2016-1024x684(pp_w768_h513).jpg" height = 75% width = 100% class="center">
+                  <img class="mySlides" src="https://static1.squarespace.com/static/53eaccc4e4b00a13a170200e/58d153b4a5790a6c244c1fdd/58d153b4e4fcb53b16b9c81f/1490113464924/Central_Park_Family_Portraits_NYC_RKP_01.jpg?format=2500w" height = 75% width = 100% class="center">
+                  <img class="mySlides" src="http://www.einphoto.net/wp-content/uploads/2015/06/central-park-family-session-0002.jpg" height = 75% width = 100% class ="center">
+                  <img class="mySlides" src="http://www.einphoto.net/wp-content/uploads/2015/10/central-park-family-portrait-001.jpg" height = 75% width = 100% class ="center" >
+
+                  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+
+                <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+                </script>
+                <p>#Central Park</p>
+			</section>
+        
+        
+        
+        
+            <section id="newsletter">
+                <div class="container">
+                    <h1>Subscribe To Our Newsletter</h1>
+                    <form>
+						<input type="email" placeholder="Enter Email...">
+                            <button type="submit" class="button_1">Subscribe</button>
+				    </form>
+				</div>
+            </section>
+		<footer>
+			<p>Central Park Visit, Copyright &copy; 2018</p>
+		</footer>
+        <section id="logoArea">
+        <div class = "container">
+            <a href = "https://www.centralpark.com/visitor-info/central-park-conservancy/"><img src="Images/CentralParkConservancyLogo.png" height = 60 width = 120 draggable = "false" ondragstart = "return false;" onContextMenu="return false;" style = "float:left"></a>
+        </div>
+        </section>
+	</body>
+</html>

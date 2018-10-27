@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset = "utf-8">
-        <meta name ="viewport" content = "width=device-width">
-        <title>Central Park Visit Survey</title>
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <div id="branding">
-                    <h1><span class="highlight">Central Park </span>Visit</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="http://www.centralparknyc.org">Main Page</a></li>
-                        <li><a href="index.html">Our Visitors</a></li>
-                        <li><a href="index.html">Sweepstakes</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+	<head>
+		<meta charset = "utf-8">
+		<meta name ="viewport" content = "width=device-width">
+		<title>Central Park Visit Survey</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1><span class="highlight">Central Park </span>Visit</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="phototrip.html">Make Your Trip Memorable</a></li>
+                        <li><a href="visitordata.html">Our Visitors</a></li>
+						<li><a href="index.html">Sweepstakes</a></li>
+						<li><a href="survey.html">Survey</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
         <br>
         <section id="showcase">
             <div class="surveyContainer">
@@ -34,18 +35,18 @@
                             <input type="radio" value="60+" name = "Age">60+<br>
                         </p>
 
-                        <p>2. Activities (Choose the best selection): <br>
-                            <input type="radio" Value ="Leisure" name= "Activity">Leisure<br>
-                            <input type="radio" Value ="Exercise" name= "Activity">Exercise<br>
-                            <input type="radio" Value ="Walking Dog" name= "Activity">Walking Dog<br>
-                            <input type="radio" Value ="Attractions" name= "Activity">Attractions<br>
-                            <input type="radio" Value ="Reading" name= "Activity2">Reading<br>
-                            <input type="radio" Value ="Eating" name= "Activity">Eating<br>                            
-                        </p>
-
-                        <p>3. Tourist: <br>
+                        <p>2. Tourist: <br>
                             <input type="radio" value="yes" name= "Tourist">Yes<br>
                             <input type="radio" value="no" name= "Tourist">No<br>
+                        </p>
+
+                        <p>3. Activities (Select all that apply): <br>
+                            <input type="Checkbox" Name="Activity" Value ="Leisure">Leisure<br>
+                            <input type="Checkbox" Name="Activity" Value ="Exercise">Exercise<br>
+                            <input type="Checkbox" Name="Activity" Value ="Walking Dog">Walking Dog<br>
+                            <input type="Checkbox" Name="Activity" Value ="Attractions">Attractions<br>
+                            <input type="Checkbox" Name="Activity" Value ="Reading">Reading<br>
+                            <input type="Checkbox" Name="Activity" Value ="Eating" >Eating<br>                            
                         </p>
                         
                         <button class = "surveyButton" input type="submit" value="Submit the Survey"><p>Submit Response</p></button>
@@ -57,8 +58,14 @@
                 </div>
         </section>
 
-        <footer>
-            <p>Central Park Visit, Copyright &copy; 2018</p>
-        </footer>
-    </body>
+		<footer>
+			<p>Central Park Visit, Copyright &copy; 2018</p>
+		</footer>
+        
+        <section id="logoArea">
+        <div class = "container">
+            <a href = "https://www.centralpark.com/visitor-info/central-park-conservancy/"><img src="https://drive.google.com/file/d/1HRKoLsYnDA6PnV3gyjISXPuMJrmfofC2/view?usp=sharing" height = 60 width = 120 draggable = "false" ondragstart = "return false;" onContextMenu="return false;" style = "float:left"></a>
+        </div>
+        </section>
+	</body>
 </html>
